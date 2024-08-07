@@ -397,7 +397,7 @@ document.addEventListener("DOMContentLoaded", function () {
   cmsVideoLinks.forEach((link) => {
     let videoUrl = link.innerText.trim();
     if (videoUrl) {
-      const iframe = document.createElement("iframe");
+      const iframe = document.createElement("video");
       iframe.src = videoUrl;
       iframe.width = "100%";
       iframe.height = "100%";
