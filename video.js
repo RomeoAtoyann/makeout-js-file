@@ -397,12 +397,6 @@ document.addEventListener("DOMContentLoaded", function () {
   cmsVideoLinks.forEach((link) => {
     let videoUrl = link.innerText.trim();
     if (videoUrl) {
-      if (videoUrl.includes("youtube.com")) {
-        videoUrl += "&autoplay=1&controls=0&loop=1";
-      } else if (videoUrl.includes("vimeo.com")) {
-        videoUrl += "&autoplay=1&muted=1&controls=0&loop=1";
-      }
-
       const iframe = document.createElement("iframe");
       iframe.src = videoUrl;
       iframe.width = "100%";
@@ -419,5 +413,5 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
-  
+
 });
