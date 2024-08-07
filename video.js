@@ -392,26 +392,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("scroll", handleScroll);
 
-  // video section
-//   const cmsVideoLinks = document.querySelectorAll(".cms-video-link");
-//   cmsVideoLinks.forEach((link) => {
-//     let videoUrl = link.innerText.trim();
-//     if (videoUrl) {
-//       const iframe = document.createElement("iframe");
-//       iframe.src = videoUrl;
-//       iframe.width = "100%";
-//       iframe.height = "100%";
-//       iframe.frameBorder = "0";
+//   video section
+  const cmsVideoLinks = document.querySelectorAll(".cms-video-link");
+  cmsVideoLinks.forEach((link) => {
+    let videoUrl = link.innerText.trim();
+    if (videoUrl) {
+      const iframe = document.createElement("iframe");
+      iframe.src = videoUrl;
+      iframe.width = "100%";
+      iframe.height = "100%";
+      iframe.frameBorder = "0";
 
-//       const videoReplacer = link
-//         .closest(".slider-item")
-//         .querySelector(".video-replacer");
-//       if (videoReplacer) {
-//         const parentContainer = videoReplacer.parentElement;
-//         parentContainer.innerHTML = "";
-//         parentContainer.appendChild(iframe); 
-//       }
-//     }
-//   });
+      const videoReplacer = link
+        .closest(".slider-item")
+        .querySelector(".video-replacer");
+      if (videoReplacer) {
+        const parentContainer = videoReplacer.parentElement;
+        parentContainer.innerHTML = "";
+        parentContainer.appendChild(iframe); 
+      }
+    }
+  });
 
 });
