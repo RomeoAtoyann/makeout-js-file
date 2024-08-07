@@ -188,7 +188,6 @@ document.addEventListener("DOMContentLoaded", function () {
         );
         if (h1) {
           smoothTextTransition(h1.textContent);
-          console.log("Active Section:", h1.textContent); // Log the name of the active section
         }
       }
     }
@@ -395,7 +394,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // video section
   const cmsVideoLinks = document.querySelectorAll(".cms-video-link");
-
   cmsVideoLinks.forEach((link) => {
     let videoUrl = link.innerText.trim();
     if (videoUrl) {
@@ -421,4 +419,5 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
+  
 });
